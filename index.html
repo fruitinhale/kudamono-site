@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>くだもの夢中 | スマートフォン向けゲーム開発</title>
+<meta name="description" content="くだもの夢中は、スマートフォン向けゲームを企画・開発・運営する個人事業です。">
+<!-- プレビューの間だけ。fruitinhale.com で公開するときに消す -->
+<meta name="robots" content="noindex, nofollow">
+<!-- Google Search Console の所有権確認を「HTMLタグ」方式で行う場合は、下の行のコメントを外して content を差し替えてください -->
+<!-- <meta name="google-site-verification" content="ここに確認コード"> -->
+<style>
+  :root{
+    --bg:#0f1226; --bg2:#171b38; --card:#1f2447; --line:#2e3566;
+    --text:#eef0ff; --muted:#a9afd6; --accent:#ffcc4d; --accent2:#7ee0c3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:16px}
+  a{color:var(--accent2)}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;background:rgba(15,18,38,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-weight:800;font-size:1.15rem;letter-spacing:.04em;color:var(--text);text-decoration:none}
+  .logo span{color:var(--accent)}
+  nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:.9rem}
+  nav a:hover{color:var(--text)}
+  .hero{padding:88px 0 72px;background:
+     radial-gradient(circle at 80% 20%,rgba(126,224,195,.18),transparent 40%),
+     radial-gradient(circle at 15% 80%,rgba(255,204,77,.15),transparent 45%),var(--bg)}
+  .hero h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.35;font-weight:800}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p{color:var(--muted);margin-top:16px;max-width:560px}
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  section:nth-of-type(even){background:var(--bg2)}
+  h2{font-size:1.5rem;margin-bottom:24px;display:flex;align-items:center;gap:10px}
+  h2::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--accent);display:inline-block}
+  h3{font-size:1.05rem;margin:24px 0 6px}
+  .games{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .game{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .game .tag{display:inline-block;font-size:.75rem;padding:2px 10px;border-radius:99px;background:rgba(255,204,77,.15);color:var(--accent);margin-bottom:10px}
+  .game h3{margin:0 0 6px;font-size:1.2rem}
+  .game p{color:var(--muted);font-size:.95rem}
+  table{width:100%;border-collapse:collapse}
+  th,td{text-align:left;padding:14px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{width:32%;color:var(--muted);font-weight:600;white-space:nowrap}
+  .policy p,.policy li{color:#d4d8f5;font-size:.95rem}
+  .policy ul{padding-left:1.4em;margin:6px 0}
+  .contact-box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  footer{padding:28px 0;color:var(--muted);font-size:.85rem;text-align:center;border-top:1px solid var(--line)}
+  @media(max-width:560px){nav{display:none}th{width:38%;white-space:normal}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">くだもの夢中<span>.</span></a>
+    <nav>
+      <a href="#games">ゲーム</a>
+      <a href="#about">事業者情報</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="#privacy">プライバシーポリシー</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>ちょっとした空き時間を、<br><em>毎日の楽しみ</em>に。</h1>
+      <p>くだもの夢中は、スマートフォン向けゲームを企画・開発・運営する個人事業です。遊ぶほど育っていく手ざわりと、思わずツッコみたくなる世界観を大切にしています。</p>
+    </div>
+  </div>
+
+  <section id="games">
+    <div class="wrap">
+      <h2>ゲーム</h2>
+      <div class="games">
+        <div class="game">
+          <span class="tag">開発中</span>
+          <h3>銀河旅館</h3>
+          <p>小惑星の小さなリゾートから始めて、自動化を進めながら銀河規模の旅館チェーンへ。経営と放置育成、ここぞの挑戦を行き来する旅館経営ゲームです。</p>
+        </div>
+        <div class="game">
+          <span class="tag">開発中</span>
+          <h3>ポッピンフルーツ</h3>
+          <p>スマートフォン向けのカジュアルゲーム。詳細は近日公開予定です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>事業者情報</h2>
+      <table>
+        <tr><th>屋号</th><td>くだもの夢中（fruitinhale）</td></tr>
+        <tr><th>代表者</th><td>【代表者氏名】</td></tr>
+        <tr><th>所在地</th><td>〒【郵便番号】<br>【所在地（バーチャルオフィス住所）】</td></tr>
+        <tr><th>事業内容</th><td>スマートフォン向けゲームアプリの企画・開発・運営</td></tr>
+        <tr><th>メール</th><td><a href="mailto:contact@fruitinhale.com">contact@fruitinhale.com</a></td></tr>
+        <tr><th>電話番号</th><td>【050電話番号】</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>お問い合わせ</h2>
+      <div class="contact-box">
+        <p>ゲームの不具合・ご意見・お取引に関するお問い合わせは、下記メールアドレスまでご連絡ください。内容を確認のうえ、順次ご返信いたします。</p>
+        <p style="margin-top:12px"><a href="mailto:contact@fruitinhale.com">contact@fruitinhale.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="policy">
+    <div class="wrap">
+      <h2>プライバシーポリシー</h2>
+      <p>くだもの夢中が提供するアプリでの利用者情報の取り扱いは、アプリごとのプライバシーポリシーで定めています。</p>
+      <ul>
+        <li>ポッピンフルーツ：<a href="https://fruitinhale.github.io/poppin-fruits/privacy/">プライバシーポリシー（日本語）</a> ／ <a href="https://fruitinhale.github.io/poppin-fruits/privacy/en/">Privacy Policy (English)</a></li>
+      </ul>
+      <p style="margin-top:12px">このサイトにはお問い合わせフォームや解析ツールはありません。メールでお問い合わせいただいた際のメールアドレスとお問い合わせの内容は、お問い合わせへの対応のためにのみ利用します。</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 くだもの夢中</div>
+</footer>
+
+</body>
+</html>
